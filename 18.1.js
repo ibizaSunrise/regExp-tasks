@@ -10,7 +10,7 @@ console.log(/\.(html|php|txt)$/.test('php.js'));
 
 //18.4
 console.log(/\.(jpg|jpeg)$/.test('jpgjpeg'));
-console.log(/\.(jp[e]?g)$/.test('jpg.jpeg'));
+console.log(/\.(jpe?g)$/.test('jpg.jpeg'));
 
 
 //18.5
@@ -34,8 +34,12 @@ console.log(/^(([0,1][0-9])|(2[0-3])):[0-5][0-9]:[0-5][0-9]$/.test('06:12:59'))
 
 console.log(/^[^@]+@[^@.]+\.[^@]+$/.test('test@mail.ru'))
 
+console.log(/[-.\w]+@([\w-]+\.)+[\w-]+/g.test('test@mail.ru'))
+
 //18.11
-console.log(/^\.[a-zA-Z]{2,3}$/.test('..cs'))
+console.log(/([\w-]+\.)+\w+/g.test('gggg.com'))
 
 console.log(/^(?:[-A-Za-z0-9]+\.)+[A-Za-z]{2,6}$/.test('sample.gtw-02.office4.example.com'))
+
+
 
