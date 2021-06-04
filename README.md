@@ -276,7 +276,7 @@ let str = 'aba aea afa aha aga';
 let str = 'func1() func2() func3()';
 Получите массив имен функций из строки.
 
-25.2 let str = '<a href="" class="eee" id="zzz">';
+25.2 let str = "<a href="" class="eee" id="zzz">";
 Получите массив имен атрибутов этого тега.
   
  ### 26. Коллбэк в методе replace в регулярках JavaScript
